@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="moonCycleFragment"
+            type="com.artemis.manymoons.MoonCycleFragment" />
+
+        <variable
+            name="moonListAdapter"
+            type="com.artemis.manymoons.MoonListAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MoonCycleFragment">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adapter="@{moonListAdapter}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline13"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/moon_items" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="69dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/moon_categories_txt"
+            android:textColor="@color/dark_purple"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/image_btn_close_desc"
+            android:src="@drawable/custom_close_icon"
+            android:onClick="@{()-> moonCycleFragment.closeCategory()}"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="318dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mon_nav_graph"
+    app:startDestination="@id/moonFragment">
+
+    <fragment
+        android:id="@+id/moonFragment"
+        android:name="com.artemis.manymoons.MoonFragment"
+        android:label="Moon Home"
+        tools:layout="@layout/fragment_moon">
+        <action
+            android:id="@+id/action_moonFragment_to_moonCycleFragment"
+            app:destination="@id/moonCycleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moonCycleFragment"
+        android:name="com.artemis.manymoons.MoonCycleFragment"
+        android:label="Moon Menu"
+        tools:layout="@layout/fragment_moon_cycle">
+        <action
+            android:id="@+id/action_moonCycleFragment_to_moonDetailsFragment"
+            app:destination="@id/moonDetailsFragment" />
+        <action
+            android:id="@+id/action_moonCycleFragment_to_moonFragment"
+            app:destination="@id/moonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moonDetailsFragment"
+        android:name="com.artemis.manymoons.MoonDetailsFragment"
+        android:label="Moon Details"
+        tools:layout="@layout/fragment_moon_details">
+        <action
+            android:id="@+id/action_moonDetailsFragment_to_moonCycleFragment"
+            app:destination="@id/moonCycleFragment" />
+        <action
+            android:id="@+id/action_moonDetailsFragment_to_moonFragment"
+            app:destination="@id/moonFragment" />
+        <argument
+            android:name="moonMenuArgs"
+            app:argType="com.artemis.manymoons.MoonMenuX" />
+    </fragment>
+</navigation>

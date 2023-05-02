@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ManyMoons</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_item_name">Coffee</string>
+
+    <string name="lorem_description">Ut ea tempore assumenda fugit, voluptatem fugiat vero quo
+nostrum neque voluptas hic tenetur repellat vel excepturi id impedit alias nobis ipsum?</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="moon_categories_txt">Moon Categories</string>
+    <string name="image_btn_close_desc">Close Image button</string>
+    <string name="marks_spot_txt">X marks the spot</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714859941625",
+    "project_id": "manymoons-4828b",
+    "storage_bucket": "manymoons-4828b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714859941625:android:5ec3416147dfe5b9a85c28",
+        "android_client_info": {
+          "package_name": "com.artemis.manymoons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714859941625-32dsq4ld5o7kkcj5agveno0u45pjtm0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEK96ytWXfX1E5AyREMNs8Eu9KVRbvBfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714859941625-32dsq4ld5o7kkcj5agveno0u45pjtm0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
