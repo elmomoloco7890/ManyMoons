@@ -7,8 +7,8 @@ import com.artemis.manymoons.databinding.MoonItemsBinding
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 
+
 class MoonListAdapter(
-    private val context: Context,
     options: FirebaseRecyclerOptions<MoonMenuX>,
     private val moonItemsListener: MoonItemClickListener
 ): FirebaseRecyclerAdapter<MoonMenuX, MoonListAdapter.MoonMenuViewHolder?>(options){
@@ -24,7 +24,7 @@ class MoonListAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoonMenuViewHolder {
-        val inflater = LayoutInflater.from(context)
+        val inflater = LayoutInflater.from(parent.context)
         val moonBinding = MoonItemsBinding.inflate(inflater, parent, false)
         binding = moonBinding
         return MoonMenuViewHolder(moonBinding)

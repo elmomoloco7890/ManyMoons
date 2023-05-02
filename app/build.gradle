@@ -62,14 +62,13 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:8.0.2'
 
     // Glide dependency
-    /*implementation 'com.github.bumptech.glide:glide:4.15.1'
-    kapt 'com.github.bumptech.glide:compiler:4.15.1'*/
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    kapt 'com.github.bumptech.glide:compiler:4.15.1'
 
-    //Storage for funzo
-    implementation 'com.google.firebase:firebase-storage-ktx'
+    // https://mvnrepository.com/artifact/com.firebaseui/firebase-ui-storage
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+
 
     //picasso dependency
     implementation 'com.squareup.picasso:picasso:2.8'
-
-    kapt "com.android.databinding:compiler:3.1.4"
 }

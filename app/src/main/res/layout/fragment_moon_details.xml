@@ -11,6 +11,7 @@
         <variable
             name="moonMenuX"
             type="com.artemis.manymoons.MoonMenuX" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,8 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:importantForAccessibility="no"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bags_of_coffee"
+            android:scaleType="fitCenter"
             imageUrl="@{moonMenuX.moon_image}"
             app:layout_constraintBottom_toTopOf="@+id/guideline9"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,14 +38,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="92dp" />
+            app:layout_constraintGuide_begin="58dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="315dp" />
+            app:layout_constraintGuide_begin="345dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -90,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="479dp" />
+            app:layout_constraintGuide_begin="523dp" />
 
         <Button
             android:id="@+id/button"
@@ -124,12 +124,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="309dp" />
+            app:layout_constraintGuide_begin="337dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/marks_spot_txt"
             android:src="@drawable/custom_close_icon"
             android:backgroundTint="@color/white"

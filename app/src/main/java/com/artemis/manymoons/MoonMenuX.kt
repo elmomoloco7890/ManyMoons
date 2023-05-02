@@ -1,10 +1,9 @@
 package com.artemis.manymoons
 
+
 import android.os.Parcelable
-import android.widget.ImageView
-import androidx.databinding.BindingAdapter
-import com.squareup.picasso.Picasso
 import kotlinx.parcelize.Parcelize
+import java.net.URI
 
 @Parcelize
 data class MoonMenuX(

@@ -51,7 +51,7 @@ class MoonCycleFragment : Fragment(), MoonItemClickListener {
             .setQuery(moonDB!!, MoonMenuX::class.java)
             .build()
         
-        adapter = MoonListAdapter(requireActivity(), options, this)
+        adapter = MoonListAdapter(options, this)
 
         binding?.apply {
             moonCycleFragment = this@MoonCycleFragment
